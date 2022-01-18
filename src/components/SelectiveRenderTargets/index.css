@@ -1,0 +1,77 @@
+.SelectiveRenderTargets {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.SelectiveRenderTargets-element {
+  width: 75%;
+  height: 60vh;
+  margin: 10vh 25% 10vh 0;
+  position: relative;
+}
+
+.SelectiveRenderTargets-element:nth-child(even) {
+  margin: 10vh 0 10vh 25%;
+}
+
+.SelectiveRenderTargets-element:first-child {
+  margin-top: 5vh;
+}
+
+.SelectiveRenderTargets-element:last-child {
+  margin-bottom: 20vh;
+}
+
+.SelectiveRenderTargets-element-inner {
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.SelectiveRenderTargets-title {
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-size: 2em;
+  font-weight: 700;
+  /* background: #ee6557; */
+  display: inline-block;
+  padding: 0.125em 0.25em;
+}
+
+.SelectiveRenderTargets-plane {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 17.5vh;
+  left: 0;
+}
+
+.SelectiveRenderTargets-element:nth-child(even) .SelectiveRenderTargets-plane {
+  right: 0;
+  left: 15%;
+}
+
+.SelectiveRenderTargets-small-plane {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 45%;
+  height: 45vh;
+}
+
+.SelectiveRenderTargets-element:nth-child(even)
+  .SelectiveRenderTargets-small-plane {
+  right: auto;
+  left: 0;
+}
+
+.SelectiveRenderTargets-plane img,
+.SelectiveRenderTargets-small-plane img {
+  display: none;
+}

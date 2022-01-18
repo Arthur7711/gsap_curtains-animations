@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* curtains canvas */
+
+.curtains-canvas {
+  position: fixed;
+  top: -10vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}

@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import SelectiveRenderTargets from "./components/SelectiveRenderTargets";
+import gsap from "gsap";
+import { useCurtains } from "react-curtains";
+import Slideshow from "./components/Slideshow";
+import "./styles.css";
 
-function App() {
+export default function App() {
+  useCurtains((curtains) => {
+    // use gsap ticker to render our curtains scene
+    gsap.ticker.add(curtains.render.bind(curtains));
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slideshow />
+      {/* <SelectiveRenderTargets /> */}
     </div>
   );
 }
-
-export default App;
