@@ -11,7 +11,7 @@ import {
   distortionFs,
   rgbFs,
   blurFs,
-} from "../../shaders/shaders";
+} from "../../shaders/shardersSelective";
 import { Vec2 } from "curtainsjs";
 
 import "./index.css";
